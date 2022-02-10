@@ -19,14 +19,32 @@ public class Main {
         // Make 2 variables and use them in an if else conditional print from one of the sections
         // Make an if statement using 2 variables and an AND(&&) statement that triggers a print or println statement
         // Make an if statement using 2 variables and an OR(||) statement that triggers a print or println statement
+        System.out.println("Hello World");
         int x = 5;
-        if (x < 10) 
-            System.out.println("x is less than 10");
-
+        int y = 3;
+        //1st
+        if (x == 5)
+            System.out.println("x equals 5");
+        //2nd
         if (x == 3)
-            System.out.println("x is equal to 3");
-         else
-         System.out.println("x is not equal to 3");
+            System.out.println("x equals 3");
+        else
+            System.out.println("x does not equal 3");
+        //3rd
+        if (x == 3)
+            System.out.println("x equals 3");
+        else
+        if(x == 5)
+            System.out.println("x equals 5");
+        //4th
+        if (x == 5)
+            System.out.println("The value of y is " + y);
+        //5th
+        if (x == 5 && y == 3)
+            System.out.println("x equals 5 and y equals 3");
+        //6th
+        if (x == 5 || y == 3)
+            System.out.println("Either x equals 5 or y equals 3, or even both x equals 5 and y equals 3");
 
     }
 }
