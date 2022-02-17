@@ -1,4 +1,6 @@
-package base;
+//package base;
+import java.util.Scanner;
+import java.lang.Math;
 
 public class Main {
     /**
@@ -14,9 +16,115 @@ public class Main {
      * - Combining functions
      * - Structuring solutions
      */
+    
+     // Raise to the power of function
+     static void powerTo(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the first number");
+        double a = scan.nextInt();
+        System.out.println("Enter the power");
+        double b = scan.nextInt();
+        scan.close();
+        System.out.println(Math.pow(a, b));
+     }
+        
+        
+    static void howMany(){
+        int finalNumber = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the length of the array");
+        int arrayLength = scan.nextInt();
+        int [] userArray = new int[arrayLength];
+        System.out.println("Enter the occurance number");
+        int occuranceNumber = scan.nextInt();
+        System.out.println("Enter the numbers in the array");
+            for(int x=0; x<arrayLength; x++){
+                userArray[x] = scan.nextInt();
+                if (occuranceNumber == userArray[x]){
+                    finalNumber++;
+                }
+            }
+            System.out.println("The amount of time is occurs is " + finalNumber);
+        }
+  
+
+    static void arraySum(){
+        int sum = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the length of the array");
+        int arrayLength = scan.nextInt();
+        int [] userArray = new int[arrayLength];
+        System.out.println("Enter the numbers in the array");
+            for(int x=0; x<arrayLength; x++){
+                userArray[x] = scan.nextInt();
+                sum += userArray[x];
+            }
+        System.out.println("The sum of the array is " + sum);
+    
+
+
+    }
+
+    static void pythagorean(){
+        int a = 5;
+        int b = 3;
+        double c = Math.sqrt((Math.pow(a, 2)) + (Math.pow(b, 2)));
+        System.out.println(c);
+    
+            
+
+        }
+
+
+    static void switchUse(){
+        String color = "red";
+        switch(color){
+            case "red":
+                System.out.println("You picked red");
+                break;
+            case "blue":
+                System.out.println("you picked blue");
+                break;
+            case "yellow":
+                System.out.println("you picked yellow");
+                break;
+            default:
+                System.out.println("Huh?");}
+
+
+
+    }
+
+
+
+
+
+
+        
+
+
+
+
+
+    
+            
+
+                
+
+
+    
+
+     
+         
+     
     public static void main(String[] args) {
         // Give me an example of you using switch case.
         // Give me an example of you using a for loop
+   //powerTo();
+    //howMany();
+    //arraySum();
+    //pythagorean();
+    switchUse();
         // Give me an example of you using a while loop
     }
     // For the following todos you'll probably want to define them below and then call them from the main function above.
