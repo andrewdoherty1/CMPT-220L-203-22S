@@ -93,18 +93,22 @@ public class Main {
         
        
 
-            
-
-
 
 
     }
 
 
+    static void whileUse(){
+        int x = 0;
+        while (x != 5){
+            x++;
+        }
+        System.out.println(x);
+
+    }
 
 
-
-
+    
         
 
 

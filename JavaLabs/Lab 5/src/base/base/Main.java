@@ -29,11 +29,35 @@ public class Main {
 
     public static void main(String[] args) {
         //	Replace this with your dry inventory function!
-        wet_inventory();
+        dry_inventory();
     }
 
     static void dry_inventory() {
-        // Your DRY Solution goes here!
+        int totalLemonade = 43;
+        int totalPretzels = 60;
+        int totalCash = 1504;
+        int totalTip = 0;
+        int[] lemonadeOrder = new int[]{1, 3, 2, 6, 4, 8, 1, 7, 3, 2};
+        int [] pretzelOrder = new int[] {4, 2, 3, 1, 2, 10, 6, 1, 2, 6, 9};
+        int [] cashOrder = new int [] {16, 28, 6, 18, 48, 32, 4, 84, 12, 8, 2, 56, 4, 32, 34};
+        int [] tipOrder = new int[]{4, 10, 5, 10, 4, 3};
+        for(int num : lemonadeOrder){
+            totalLemonade = totalLemonade - num;
+        }
+        for(int num : pretzelOrder){
+            totalPretzels = totalPretzels - num;
+        }
+        for(int num : cashOrder){
+            totalCash = totalCash + num;
+        }
+        for(int num: tipOrder){
+            totalTip = totalTip + num;
+        }
+        System.out.println("Lemonade Inventory: " + totalLemonade);
+        System.out.println("Pretzel Inventory: " + totalPretzels);
+        System.out.println("Cash: " + totalCash);
+        System.out.println("Tips: " + totalTip);
+
     }
 
     static void wet_inventory() {
@@ -125,5 +149,6 @@ public class Main {
         System.out.println("Pretzels Inventory: " + pretzels_available);
         System.out.println("Cash: " + cash);
         System.out.println("Tips: " + tips);
+
     }
 }
