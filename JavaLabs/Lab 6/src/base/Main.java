@@ -30,13 +30,27 @@ public class Main {
         // Create an Stack, Populate it, and Print it out
         // Using the information in the Lab 6 Jupyter Notebook create an instance of plant here.
         PlantFile plant1 = new PlantFile(true, "tree", "oak");
+        // add elements to LinkedList
         plant1.addLinkedInstruction("Pour Water");
         plant1.addLinkedInstruction("wait for water to be used by plant");
+        // add elements to ArrayList
         plant1.addArrayList("Tulip");
         plant1.addArrayList("Rose");
         plant1.addArrayList("Daisy");
+        // add elements to Queue
+        plant1.addQueue("Make hole in dirt");
+        plant1.addQueue("place seed in hole");
+        plant1.addQueue("cover seed with dirt");
+        plant1.addQueue("water seed");
+        // add elements to stack
+        plant1.addStack("Bottom of pot");
+        plant1.addStack("Sand");
+        plant1.addStack("Soil");
+        plant1.addStack("Top of pot(air)");
+        // add elements to array
         plant1.addArray(1);
-        System.out.println(plant1.favoritePlantArray);
+        // print statement for plant1
+        System.out.println(plant1.soilStack);
 
 
     }
