@@ -34,9 +34,9 @@ public class Main {
         plant1.addLinkedInstruction("Pour Water");
         plant1.addLinkedInstruction("wait for water to be used by plant");
         // add elements to ArrayList
-        plant1.addArrayList("Tulip");
-        plant1.addArrayList("Rose");
-        plant1.addArrayList("Daisy");
+        plant1.sunLightInstruction("place in window");
+        plant1.sunLightInstruction("let sun hit");
+        plant1.sunLightInstruction("watch plant grow");
         // add elements to Queue
         plant1.addQueue("Make hole in dirt");
         plant1.addQueue("place seed in hole");
@@ -50,7 +50,7 @@ public class Main {
         // add elements to array
         plant1.addArray(1);
         // print statement for plant1
-        System.out.println(plant1.soilStack);
+        System.out.println(plant1.sunLightArrayList);
 
 
     }

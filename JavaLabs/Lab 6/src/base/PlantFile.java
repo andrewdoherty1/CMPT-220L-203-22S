@@ -10,7 +10,7 @@ public class PlantFile {
     String plantFamily;
     String plantName;
     int[] array;
-    ArrayList<String> favoritePlantArray = new ArrayList<String>();
+    ArrayList<String> sunLightArrayList = new ArrayList<String>();
     LinkedList<String> wateringInstruction = new LinkedList<>();
     Queue<String> instructionQueue = new LinkedList<String>();
     Stack<String> soilStack = new Stack<String>();
@@ -32,8 +32,8 @@ public class PlantFile {
         array = new int[3];
         int array = numbers;
     }
-    public void addArrayList(String favoritePlant){
-        favoritePlantArray.add(favoritePlant);
+    public void sunLightInstruction(String favoritePlant){
+        sunLightArrayList.add(favoritePlant);
     }
     public void addQueue(String instruction){
         instructionQueue.add(instruction);
