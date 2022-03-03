@@ -1,4 +1,5 @@
 package base;
+import java.util.LinkedList;
 
 public class Main {
     /**
@@ -28,5 +29,15 @@ public class Main {
         // Create an Queue, Populate it, and Print it out
         // Create an Stack, Populate it, and Print it out
         // Using the information in the Lab 6 Jupyter Notebook create an instance of plant here.
+        PlantFile plant1 = new PlantFile(true, "tree", "oak");
+        plant1.addLinkedInstruction("Pour Water");
+        plant1.addLinkedInstruction("wait for water to be used by plant");
+        plant1.addArrayList("Tulip");
+        plant1.addArrayList("Rose");
+        plant1.addArrayList("Daisy");
+        plant1.addArray(1);
+        System.out.println(plant1.favoritePlantArray);
+
+
     }
 }
